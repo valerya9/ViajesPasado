@@ -22,6 +22,11 @@ class Destination extends Model
         return $this->hasMany(Activity::class);
     }
 
+    public function guides()
+    {
+        return $this->hasMany(Guides::class);
+    }
+
     /**
      * Relación MUCHOS A MUCHOS: Un destino puede estar en varios tours.
      * Laravel busca automáticamente la tabla pivote 'destination_tour'.

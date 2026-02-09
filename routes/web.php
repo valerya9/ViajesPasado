@@ -58,3 +58,9 @@ Route::post('tours/{tour}/destinations', [App\Http\Controllers\TourController::c
     ->name('tours.addDestination');
 Route::delete('tours/{tour}/destinations/{destination}', [App\Http\Controllers\TourController::class, 'removeDestination'])
     ->name('tours.removeDestination');
+
+
+Route::get('guides', [App\Http\Controllers\GuidesController::class, 'index'])
+    ->name('guides.index');
+Route::delete('guides/{guide}', [App\Http\Controllers\GuidesController::class, 'destroy'])
+    ->name('guides.destroy');

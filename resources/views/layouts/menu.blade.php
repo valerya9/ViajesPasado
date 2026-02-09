@@ -19,4 +19,7 @@
     <li>
         <a href="{{ route('tours.index') }}">Tours</a>
     </li>
+    <li>
+        <a href="{{ route('guides.index') }}">Guías</a>
+    </li>
 </ul>
