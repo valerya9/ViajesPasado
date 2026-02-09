@@ -1,0 +1,26 @@
+Rutas --> 
+    web.php - todas las rutas de la aplicación.
+Controladores -->
+    ActivityController.php - gestión de actividades y filtrado por destino.
+    CommentController.php - CRUD de comentarios.
+    TourController.php - Gestión de tours y relación muchos a muchos.
+Modelos -->
+    Activity.php - relaciones con Destination y Comments.
+    Comment.php - relación con Activity.
+    Destination.php - relaciones con activities y tours. 
+    Tour.php - relación muchos con Destination.
+Migraciones -->
+    create_comments_table.php
+    create_tours_table.php
+    create_destinatio_tour_table.php - tabla pivote.
+Seeders -->
+    DatabaseSeeder.php - Seeder principal
+    CommentSeeder.php - 10 comentarios de prueba.
+    TourSeeder.php - 4 tours con relaciones.
+Vistas -->
+    menu.blade.php - menú de navegación.
+    index.blade.php - enlace a acttividades filtradas.
+    index.blade.php - tabla con contador de comentarios.
+    show.blade.php - dettalle y formulario de comentarios.
+    index.blade.php - listado con opción de borrar.
+    index.blade.php - tours con añadir y quitar destinos. 
